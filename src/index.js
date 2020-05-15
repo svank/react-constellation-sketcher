@@ -37,6 +37,7 @@ export default class ConstellationSketcher extends React.Component {
                     || prop === "height"
                     || prop === "slideshow"
                     || prop === "style"
+                    || prop === "className"
                     || prop === "weights"
                     )
                 continue
@@ -72,6 +73,7 @@ export default class ConstellationSketcher extends React.Component {
             <canvas
                 id='constellation-sketcher'
                 style={this.props.style}
+                className={this.props.className}
                 width={this.props.width || 500}
                 height={this.props.height || 500}
           />
@@ -98,6 +100,7 @@ export default class ConstellationSketcher extends React.Component {
         
         weights: PropTypes.objectOf(PropTypes.number),
         style: PropTypes.object,
+        className: PropTypes.string,
     }
 }
 

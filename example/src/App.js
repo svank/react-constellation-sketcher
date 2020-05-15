@@ -18,6 +18,7 @@ const App = () => {
                 weights={{"all": 0, "small": 1, "striking": 1000}}
                 slideshow={slideshow}
                 style={{margin: "10px"}}
+                className="demo-class"
                 drawBeginCallback={() => {
                     document.getElementById("label").innerHTML = CS.getConstellation();
                 }}

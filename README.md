@@ -39,7 +39,7 @@ Every [configuration option](https://github.com/svank/constellation-sketcher#con
  * `setCrossFade` and `setFadeIn` are broken into the props `crossFade`, `crossFadeTime`, `fadeIn`, and `fadeInTime`.
 * Random selection weights are set via the `weights` prop, which should be set to an object where the keys are some or all of `all`, `popular`, `striking`, `medium`, or `small`. E.g. `weights={{'all': 0, 'striking': 1}}` will ensure only *striking* constellations are chosen, and `weights={{'medium': 0}}` will block *medium* constellations from being chosen while leaving the other categories at their default weights.
 
-The `width` and `height` props control the size of the component (square aspect ratios are recommended), and the `style` prop is passed through to the underlying `<canvas>` element.
+The `width` and `height` props control the size of the component (square aspect ratios are recommended), and the `style` and `className` props are passed through to the underlying `<canvas>` element.
 
 The `constellation` prop sets the constellation to be shown (or the first constellation for a slideshow). If not given, a random constellation is chosen.
 
